@@ -12,9 +12,9 @@
             Console.WriteLine("Great!");
             Console.WriteLine("Now please tell me the minimum number you want me to generate");
             maximumNumber = Convert.ToInt32(Console.ReadLine());
-            var rDouble = random.NextDouble() * maximumNumber + minimumNumber;
-            theRandomNumber = random.NextDouble();
-            Console.WriteLine(theRandomNumber);
+            theRandomNumber = random.NextDouble() * maximumNumber + minimumNumber;
+            Thread.Sleep(500);
+            Console.WriteLine($"Your random number is .. ...{theRandomNumber}");
 
 
         }
